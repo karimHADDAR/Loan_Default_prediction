@@ -1,4 +1,4 @@
-# 🏦 Loan Default Prediction using XGBoost
+# Loan Default Prediction using XGBoost
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Latest-orange.svg)](https://xgboost.readthedocs.io/)
@@ -6,15 +6,15 @@
 
 > A production-ready machine learning system that predicts loan defaults to help financial institutions reduce credit risk.
 
-## 📊 Project Overview
+## Project Overview
 
 This project builds a sophisticated credit risk model using **XGBoost** to predict whether a customer will default on a loan. The model analyzes borrower characteristics, loan details, and credit history to provide actionable risk assessments.
 
 **Business Value:**
-- 🎯 Identify high-risk loans before approval
-- 💰 Reduce default rates and financial losses
-- 📈 Enable dynamic, risk-based pricing
-- ⚖️ Provide explainable predictions for regulatory compliance
+- Identify high-risk loans before approval
+- Reduce default rates and financial losses
+- Enable dynamic, risk-based pricing
+- Provide explainable predictions for regulatory compliance
 
 ### Key Features
 
@@ -27,7 +27,7 @@ This project builds a sophisticated credit risk model using **XGBoost** to predi
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -93,7 +93,7 @@ loan-default-prediction/
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
 ### 1. Exploratory Data Analysis (EDA)
 
@@ -265,7 +265,7 @@ print(f"Default probability: {predictions[0]*100:.2f}%")
 
 ---
 
-## 🎯 Business Insights
+## Business Insights
 
 ### Risk Factors Identified
 
@@ -347,41 +347,22 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
----
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
 
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@KarimHaddar](https://github.com/yourusername)
-- LinkedIn: [KarimHaddar](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@KarimHaddar](https://github.com/karimHADDAR)
+- LinkedIn: [KarimHaddar](https://www.linkedin.com/in/karim-haddar/)
+- Email: karim.haddar@eleves.ec-nantes.fr
 
----
-
-## 🙏 Acknowledgments
-
-- LendingClub for providing the public dataset
-- XGBoost team for the excellent library
-- SHAP library for model interpretability
-- Open-source community
-
----
-
-## 📚 References
+## References
 
 1. [XGBoost Documentation](https://xgboost.readthedocs.io/)
 2. [SHAP Library](https://shap.readthedocs.io/)
 3. [LendingClub Statistics](https://www.lendingclub.com/info/statistics.action)
 4. [Credit Risk Modeling Best Practices](https://www.bis.org/publ/bcbs_wp17.pdf)
 
----
 
-## ⭐ If you found this project helpful, please give it a star!
 
-**Keywords**: Machine Learning, XGBoost, Credit Risk, Loan Default Prediction, SHAP, Financial ML, Classification, Imbalanced Data, Feature Engineering, Model Explainability
+
