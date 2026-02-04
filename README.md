@@ -1,11 +1,4 @@
 # Loan Default Prediction using XGBoost
-
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-Latest-orange.svg)](https://xgboost.readthedocs.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-> A production-ready machine learning system that predicts loan defaults to help financial institutions reduce credit risk.
-
 ## Project Overview
 
 This project builds a sophisticated credit risk model using **XGBoost** to predict whether a customer will default on a loan. The model analyzes borrower characteristics, loan details, and credit history to provide actionable risk assessments.
@@ -87,10 +80,6 @@ loan-default-prediction/
 - Create derived features:
   - `loan_to_income`: Loan amount / Annual income
   - `installment_to_income`: Annual installment / Annual income
-
-**Encoding Strategy**:
-- **High-cardinality categoricals** (e.g., state, sub_grade): Target encoding
-- **Low-cardinality categoricals** (e.g., grade, home_ownership): One-hot encoding
 
 ### 3. Model Training
 
@@ -201,10 +190,6 @@ X_new = pd.DataFrame({...})  # Your features
 predictions = model.predict_proba(X_new)[:, 1]
 print(f"Default probability: {predictions[0]*100:.2f}%")
 ```
-
-
-
-## Model Performance
 
 ### Comparison with Baseline
 
