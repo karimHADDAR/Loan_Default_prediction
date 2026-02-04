@@ -25,45 +25,13 @@ This project builds a sophisticated credit risk model using **XGBoost** to predi
 - **Model Explainability**: SHAP values for transparent, interpretable predictions
 - **Production-Ready Code**: Modular scripts for training, evaluation, and deployment
 
----
-
-## Quick Start
-
-### Prerequisites
-
-```bash
-Python 3.8+
-pip or conda
-```
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone <your-repo-url>
-cd loan-default-prediction
-```
-
-2. **Create virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Download the dataset**
+**Download the dataset**
 
 Place the `accepted_2007_to_2018Q4.csv` file in the `data/` directory.
 
 Dataset source: [LendingClub Loan Data](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 loan-default-prediction/
@@ -90,8 +58,6 @@ loan-default-prediction/
 ├── requirements.txt                   # Python dependencies
 └── README.md                          # This file
 ```
-
----
 
 ##  Methodology
 
@@ -185,9 +151,7 @@ Precision:          40-50%
 4. Recent Delinquencies (strong negative signal)
 5. Credit History Length (shorter → higher uncertainty)
 
----
-
-## 💻 Usage
+## Usage
 
 ### Option 1: Interactive Notebooks (Recommended for Exploration)
 
@@ -238,9 +202,9 @@ predictions = model.predict_proba(X_new)[:, 1]
 print(f"Default probability: {predictions[0]*100:.2f}%")
 ```
 
----
 
-## 📈 Model Performance
+
+## Model Performance
 
 ### Comparison with Baseline
 
@@ -250,118 +214,13 @@ print(f"Default probability: {predictions[0]*100:.2f}%")
 | XGBoost (Initial)   | 0.68    | 0.48     | 0.80     |
 | **XGBoost (Tuned)** | **0.71**| **0.52** | **0.82** |
 
-### Feature Importance (Top 10)
-
-1. Interest Rate
-2. Loan Grade
-3. Sub-grade
-4. DTI Ratio
-5. Annual Income
-6. Revolving Utilization
-7. Credit History Length
-8. Recent Delinquencies
-9. Loan Amount
-10. Number of Open Accounts
-
----
-
-## Business Insights
-
-### Risk Factors Identified
-
-1. **High Interest Rate + High DTI**: Extremely high default risk
-2. **Short Employment (<2 years) + Large Loan**: Risky combination
-3. **Recent Delinquencies**: Strongest negative indicator
-4. **Low Loan Grade (F, G)**: Default rate >30%
-
-### Recommended Actions
-
-**For Lending Institutions**:
-- **Automate approvals** for low-risk predictions (<10% default probability)
-- **Manual review** for medium risk (10-30%)
-- **Reject or restructure** high risk (>30%)
-- **Dynamic pricing**: Adjust interest rates based on predicted risk
-- **Offer debt consolidation** to high-DTI applicants
-
-**Model Monitoring**:
-- Track default rates by risk bucket
-- Monitor SHAP values for feature drift
-- Retrain quarterly with new data
-- A/B test against current system
-
----
-
-## 🛠️ Technology Stack
-
-| Category              | Technology                          |
-|-----------------------|-------------------------------------|
-| **Language**          | Python 3.8+                        |
-| **ML Framework**      | XGBoost, scikit-learn              |
-| **Explainability**    | SHAP                               |
-| **Data Processing**   | Pandas, NumPy                      |
-| **Visualization**     | Matplotlib, Seaborn                |
-| **Notebook**          | Jupyter                            |
-| **Model Persistence** | Joblib                             |
-
----
-
-## 📊 Dataset Information
-
-**Source**: LendingClub Loan Data (2007-2018 Q4)
-
-**Size**: 2.2M+ loan records
-
-**Features** (~150 columns):
-- **Loan Characteristics**: Amount, term, interest rate, grade, purpose
-- **Borrower Profile**: Income, employment, verification status
-- **Credit History**: DTI, credit lines, delinquencies, bankruptcies
-- **Geographic**: State
-
-**Target**: Loan status (binary classification)
-
-**Note**: Dataset is anonymized and publicly available for research.
-
----
-
-##  Future Enhancements
-
-- [ ] **Deployment**: REST API with Flask/FastAPI
-- [ ] **MLOps**: MLflow for experiment tracking
-- [ ] **Feature Store**: Cache and version features
-- [ ] **Real-time Predictions**: Stream processing with Kafka
-- [ ] **Dashboard**: Interactive Streamlit/Dash app
-- [ ] **A/B Testing**: Framework for model comparison
-- [ ] **Fairness Analysis**: Bias detection across demographics
-- [ ] **AutoML**: Automated hyperparameter optimization
-- [ ] **Ensemble**: Combine XGBoost with LightGBM, CatBoost
-
----
-
-##  Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-## 👤 Author
-
-**Your Name**
+## Author
 - GitHub: [@KarimHaddar](https://github.com/karimHADDAR)
 - LinkedIn: [KarimHaddar](https://www.linkedin.com/in/karim-haddar/)
 - Email: karim.haddar@eleves.ec-nantes.fr
 
-## References
 
-1. [XGBoost Documentation](https://xgboost.readthedocs.io/)
-2. [SHAP Library](https://shap.readthedocs.io/)
-3. [LendingClub Statistics](https://www.lendingclub.com/info/statistics.action)
-4. [Credit Risk Modeling Best Practices](https://www.bis.org/publ/bcbs_wp17.pdf)
+
 
 
 
